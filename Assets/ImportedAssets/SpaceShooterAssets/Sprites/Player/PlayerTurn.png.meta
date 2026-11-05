@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 37c7f5d7c93825f409b3cc15f981990b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6145722217054251655
+    second: PlayerTurn_0
+  - first:
+      213: 7434650930308826248
+    second: PlayerTurn_1
+  - first:
+      213: -4599114288495397192
+    second: PlayerTurn_2
+  - first:
+      213: 4545685815977586402
+    second: PlayerTurn_3
+  - first:
+      213: 1634159070596268851
+    second: PlayerTurn_4
+  - first:
+      213: -8269771854767101969
+    second: PlayerTurn_5
+  - first:
+      213: 3020698784903109421
+    second: PlayerTurn_6
+  - first:
+      213: -5584714480972125114
+    second: PlayerTurn_7
+  - first:
+      213: 8697885597323230860
+    second: PlayerTurn_8
+  - first:
+      213: 3175451512322428161
+    second: PlayerTurn_9
+  - first:
+      213: 1803575581847951100
+    second: PlayerTurn_10
+  - first:
+      213: 6175201000017376201
+    second: PlayerTurn_11
+  - first:
+      213: -6351699226492454005
+    second: PlayerTurn_12
+  - first:
+      213: -903744174943628681
+    second: PlayerTurn_13
+  - first:
+      213: -5866389170483019188
+    second: PlayerTurn_14
+  - first:
+      213: -2186320205995755227
+    second: PlayerTurn_15
+  - first:
+      213: 2331710071332443753
+    second: PlayerTurn_16
+  - first:
+      213: -2830450182679571851
+    second: PlayerTurn_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerTurn_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 232
+        width: 166
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975514c743206baa0800000000000000
+      internalID: -6145722217054251655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 232
+        width: 167
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884c51271af2d2760800000000000000
+      internalID: 7434650930308826248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_2
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 231
+        width: 166
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6fec8fbe9ac20c0800000000000000
+      internalID: -4599114288495397192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_3
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 230
+        width: 165
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee20e16a25851f30800000000000000
+      internalID: 4545685815977586402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_4
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 228
+        width: 162
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3338f5d3403bda610800000000000000
+      internalID: 1634159070596268851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_5
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 227
+        width: 158
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7651f205edb3d80800000000000000
+      internalID: -8269771854767101969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_6
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 225
+        width: 152
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b9a9f5a8dabe920800000000000000
+      internalID: 3020698784903109421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_7
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 223
+        width: 144
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c2da5c4cb1f72b0800000000000000
+      internalID: -5584714480972125114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_8
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 224
+        width: 135
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8eff6d0ed815b870800000000000000
+      internalID: 8697885597323230860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 8
+        width: 166
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d84718358711c20800000000000000
+      internalID: 3175451512322428161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_10
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 8
+        width: 167
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf69d999f66970910800000000000000
+      internalID: 1803575581847951100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 7
+        width: 166
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c33ca68798b2b550800000000000000
+      internalID: 6175201000017376201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_12
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 6
+        width: 165
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b3bccc43b3ad7a0800000000000000
+      internalID: -6351699226492454005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_13
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 4
+        width: 161
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77218ac06714573f0800000000000000
+      internalID: -903744174943628681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_14
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 3
+        width: 157
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4249238126669ea0800000000000000
+      internalID: -5866389170483019188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_15
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1
+        width: 151
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5293d543b51a8a1e0800000000000000
+      internalID: -2186320205995755227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_16
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 0
+        width: 143
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96698f8b4f5eb5020800000000000000
+      internalID: 2331710071332443753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTurn_17
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 0
+        width: 135
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572d1f22e8838b8d0800000000000000
+      internalID: -2830450182679571851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerTurn_0: -6145722217054251655
+      PlayerTurn_1: 7434650930308826248
+      PlayerTurn_10: 1803575581847951100
+      PlayerTurn_11: 6175201000017376201
+      PlayerTurn_12: -6351699226492454005
+      PlayerTurn_13: -903744174943628681
+      PlayerTurn_14: -5866389170483019188
+      PlayerTurn_15: -2186320205995755227
+      PlayerTurn_16: 2331710071332443753
+      PlayerTurn_17: -2830450182679571851
+      PlayerTurn_2: -4599114288495397192
+      PlayerTurn_3: 4545685815977586402
+      PlayerTurn_4: 1634159070596268851
+      PlayerTurn_5: -8269771854767101969
+      PlayerTurn_6: 3020698784903109421
+      PlayerTurn_7: -5584714480972125114
+      PlayerTurn_8: 8697885597323230860
+      PlayerTurn_9: 3175451512322428161
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

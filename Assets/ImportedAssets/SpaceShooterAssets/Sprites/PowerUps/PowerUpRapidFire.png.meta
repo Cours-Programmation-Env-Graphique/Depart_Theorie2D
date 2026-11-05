@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: df2348abe718f41429f60f2c595616f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5572182967952127492
+    second: PowerUpRapidFire_0
+  - first:
+      213: 5839464066175091831
+    second: PowerUpRapidFire_1
+  - first:
+      213: 3862516134565323870
+    second: PowerUpRapidFire_2
+  - first:
+      213: 3102038580092299953
+    second: PowerUpRapidFire_3
+  - first:
+      213: -3074087533478744089
+    second: PowerUpRapidFire_4
+  - first:
+      213: 6475446879709155954
+    second: PowerUpRapidFire_5
+  - first:
+      213: 3647345704983437967
+    second: PowerUpRapidFire_6
+  - first:
+      213: -5817506035806880505
+    second: PowerUpRapidFire_7
+  - first:
+      213: -9054001599196850624
+    second: PowerUpRapidFire_8
+  - first:
+      213: 6113554375360926084
+    second: PowerUpRapidFire_9
+  - first:
+      213: 738367713573520008
+    second: PowerUpRapidFire_10
+  - first:
+      213: 1416266331957417602
+    second: PowerUpRapidFire_11
+  - first:
+      213: -8953871162219376401
+    second: PowerUpRapidFire_12
+  - first:
+      213: -2571075494354752430
+    second: PowerUpRapidFire_13
+  - first:
+      213: -4759659206434569842
+    second: PowerUpRapidFire_14
+  - first:
+      213: -5694709111984282049
+    second: PowerUpRapidFire_15
+  - first:
+      213: -7359506369258263226
+    second: PowerUpRapidFire_16
+  - first:
+      213: -2771617589301916446
+    second: PowerUpRapidFire_17
+  - first:
+      213: 2080817737090152935
+    second: PowerUpRapidFire_18
+  - first:
+      213: 3326356796767022047
+    second: PowerUpRapidFire_19
+  - first:
+      213: 5205515358513850366
+    second: PowerUpRapidFire_20
+  - first:
+      213: 641006524597408842
+    second: PowerUpRapidFire_21
+  - first:
+      213: -8917408869102845666
+    second: PowerUpRapidFire_22
+  - first:
+      213: 4002307761087303929
+    second: PowerUpRapidFire_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PowerUpRapidFire_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb045cabbec20a449d4abee1eb743c3
+      internalID: 5572182967952127492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRapidFire_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 190
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70860e60d50ae6044b9a5554ac1c0267
+      internalID: 5839464066175091831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRapidFire_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 190
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95126a04395ca054c84559003694102f
+      internalID: 3862516134565323870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRapidFire_3
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 190
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5ce06390e9a814b9cc047c01f51d39
+      internalID: 3102038580092299953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRapidFire_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6f6020939d1714f9072a9ab1790910
+      internalID: -3074087533478744089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRapidFire_5
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1ca9ca77e3a8545ad0cbcc5fb3b56f
+      internalID: 6475446879709155954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRapidFire_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e775feb333b8444cb5402c8854921b6
+      internalID: 3647345704983437967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRapidFire_7
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 216
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b9c737cae72664f8a12c40846eee6f
+      internalID: -5817506035806880505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f81154a52eaec6b409d7e429b667691d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PowerUpRapidFire_0: 5572182967952127492
+      PowerUpRapidFire_1: 5839464066175091831
+      PowerUpRapidFire_10: 738367713573520008
+      PowerUpRapidFire_11: 1416266331957417602
+      PowerUpRapidFire_12: -8953871162219376401
+      PowerUpRapidFire_13: -2571075494354752430
+      PowerUpRapidFire_14: -4759659206434569842
+      PowerUpRapidFire_15: -5694709111984282049
+      PowerUpRapidFire_16: -7359506369258263226
+      PowerUpRapidFire_17: -2771617589301916446
+      PowerUpRapidFire_18: 2080817737090152935
+      PowerUpRapidFire_19: 3326356796767022047
+      PowerUpRapidFire_2: 3862516134565323870
+      PowerUpRapidFire_20: 5205515358513850366
+      PowerUpRapidFire_21: 641006524597408842
+      PowerUpRapidFire_22: -8917408869102845666
+      PowerUpRapidFire_23: 4002307761087303929
+      PowerUpRapidFire_3: 3102038580092299953
+      PowerUpRapidFire_4: -3074087533478744089
+      PowerUpRapidFire_5: 6475446879709155954
+      PowerUpRapidFire_6: 3647345704983437967
+      PowerUpRapidFire_7: -5817506035806880505
+      PowerUpRapidFire_8: -9054001599196850624
+      PowerUpRapidFire_9: 6113554375360926084
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
