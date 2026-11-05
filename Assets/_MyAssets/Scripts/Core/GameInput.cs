@@ -21,11 +21,6 @@ public class GameInput : MonoBehaviour
     public event Action FireReleased;
 
     /// <summary>
-    /// Déclenché à chaque appui sur le bouton de pause.
-    /// </summary>
-    public event Action PausePressed;
-
-    /// <summary>
     /// Déclenché à chaque appui sur le bouton de sourdine (projet).
     /// </summary>
     public event Action MutePressed;
@@ -43,7 +38,6 @@ public class GameInput : MonoBehaviour
     {
         _inputActions.Player.Fire.performed += HandleFirePerformed;
         _inputActions.Player.Fire.canceled += HandleFireCanceled;
-        _inputActions.Player.Pause.performed += HandlePausePerformed;
         _inputActions.Player.Mute.performed += HandleMutePerformed;
     }
 
@@ -51,7 +45,6 @@ public class GameInput : MonoBehaviour
     {
         _inputActions.Player.Fire.performed -= HandleFirePerformed;
         _inputActions.Player.Fire.canceled -= HandleFireCanceled;
-        _inputActions.Player.Pause.performed -= HandlePausePerformed;
         _inputActions.Player.Mute.performed -= HandleMutePerformed;
     }
 
@@ -80,11 +73,6 @@ public class GameInput : MonoBehaviour
     private void HandleFireCanceled(InputAction.CallbackContext context)
     {
         FireReleased?.Invoke();
-    }
-
-    private void HandlePausePerformed(InputAction.CallbackContext context)
-    {
-        PausePressed?.Invoke();
     }
 
     private void HandleMutePerformed(InputAction.CallbackContext context)
