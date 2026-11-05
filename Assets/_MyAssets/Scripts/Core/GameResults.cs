@@ -3,12 +3,8 @@
 /// </summary>
 public static class GameResults
 {
-    // Pointage de la dernière partie terminée
+    // Pointage de la dernière partie terminée, lu par l'écran de fin
     private static int _finalScore;
-
-    /// <summary>
-    /// Pointage de la dernière partie terminée.
-    /// </summary>
     public static int FinalScore => _finalScore;
 
     /// <summary>

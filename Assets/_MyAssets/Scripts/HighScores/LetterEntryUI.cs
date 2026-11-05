@@ -62,17 +62,25 @@ public class LetterEntryUI : MonoBehaviour
     /// </summary>
     public void Submit()
     {
-        // Une saisie vide, ou faite seulement d'espaces, n'est pas acceptée
-        if (string.IsNullOrWhiteSpace(_input))
+        // Une saisie vide n'est pas acceptée
+        if (_input.Length == 0)
         {
             return;
         }
 
-        _submitted.Invoke(_input.Trim());
+        _submitted.Invoke(_input);
     }
 
     private void RefreshDisplay()
     {
-        _displayText.text = _isMasked ? new string('*', _input.Length) : _input;
+        if (_isMasked)
+        {
+            // Une étoile par caractère : le mot de passe ne s'affiche pas
+            _displayText.text = new string('*', _input.Length);
+        }
+        else
+        {
+            _displayText.text = _input;
+        }
     }
 }

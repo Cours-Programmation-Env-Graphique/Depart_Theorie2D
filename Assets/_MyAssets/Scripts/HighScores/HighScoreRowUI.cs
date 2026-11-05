@@ -29,7 +29,14 @@ public class HighScoreRowUI : MonoBehaviour
     /// <param name="score">Pointage.</param>
     public void SetValues(int rank, string playerName, int score)
     {
-        _rankText.text = rank == 1 ? "1er" : $"{rank}e";
+        if (rank == 1)
+        {
+            _rankText.text = "1er";
+        }
+        else
+        {
+            _rankText.text = $"{rank}e";
+        }
         _nameText.text = playerName;
         _scoreText.text = score.ToString();
 

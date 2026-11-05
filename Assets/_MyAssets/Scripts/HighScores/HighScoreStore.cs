@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -7,29 +6,33 @@ using UnityEngine;
 /// </summary>
 public static class HighScoreStore
 {
-    /// <summary>
-    /// Nombre de pointages conservés dans le tableau.
-    /// </summary>
-    public const int MaxEntries = 10;
+    // Nombre de pointages conservés dans le tableau
+    private const int MaxEntries = 10;
 
-    // Clé sous laquelle le tableau est enregistré dans les PlayerPrefs
-    private const string PrefsKey = "HighScores";
-
-    // JsonUtility ne sait pas écrire une liste seule : elle doit être le champ d'un objet
-    [Serializable]
-    private class HighScoreList
-    {
-        [SerializeField] private List<HighScoreEntry> _entries = new List<HighScoreEntry>();
-
-        public List<HighScoreEntry> Entries => _entries;
-    }
+    // Début des clés des PlayerPrefs : HighScoreName0, HighScoreScore0, HighScoreName1…
+    private const string NameKey = "HighScoreName";
+    private const string ScoreKey = "HighScoreScore";
 
     /// <summary>
-    /// Les meilleurs pointages, du meilleur au moins bon.
+    /// Lit les meilleurs pointages, du meilleur au moins bon.
     /// </summary>
-    public static IReadOnlyList<HighScoreEntry> Load()
+    public static List<HighScoreEntry> Load()
     {
-        return LoadList().Entries;
+        List<HighScoreEntry> entries = new List<HighScoreEntry>();
+        for (int i = 0; i < MaxEntries; i++)
+        {
+            // Les places se remplissent dans l'ordre : la première vide termine le tableau
+            if (!PlayerPrefs.HasKey(NameKey + i))
+            {
+                break;
+            }
+
+            string name = PlayerPrefs.GetString(NameKey + i);
+            int score = PlayerPrefs.GetInt(ScoreKey + i);
+            entries.Add(new HighScoreEntry(name, score));
+        }
+
+        return entries;
     }
 
     /// <summary>
@@ -38,7 +41,7 @@ public static class HighScoreStore
     /// <param name="score">Pointage à vérifier.</param>
     public static bool Qualifies(int score)
     {
-        List<HighScoreEntry> entries = LoadList().Entries;
+        List<HighScoreEntry> entries = Load();
 
         // Une place libre, ou un pointage meilleur que le dernier du tableau
         return entries.Count < MaxEntries || score > entries[entries.Count - 1].Score;
@@ -51,16 +54,29 @@ public static class HighScoreStore
     /// <param name="score">Pointage obtenu.</param>
     public static void Add(string name, int score)
     {
-        HighScoreList list = LoadList();
-        list.Entries.Add(new HighScoreEntry(name, score));
-        list.Entries.Sort(CompareByScoreDescending);
+        List<HighScoreEntry> entries = Load();
 
-        if (list.Entries.Count > MaxEntries)
+        // On avance tant que les pointages du tableau sont au moins aussi bons
+        int index = 0;
+        while (index < entries.Count && entries[index].Score >= score)
         {
-            list.Entries.RemoveRange(MaxEntries, list.Entries.Count - MaxEntries);
+            index++;
         }
 
-        PlayerPrefs.SetString(PrefsKey, JsonUtility.ToJson(list));
+        entries.Insert(index, new HighScoreEntry(name, score));
+
+        // Le onzième pointage sort du tableau
+        if (entries.Count > MaxEntries)
+        {
+            entries.RemoveAt(MaxEntries);
+        }
+
+        for (int i = 0; i < entries.Count; i++)
+        {
+            PlayerPrefs.SetString(NameKey + i, entries[i].Name);
+            PlayerPrefs.SetInt(ScoreKey + i, entries[i].Score);
+        }
+
         PlayerPrefs.Save();
     }
 
@@ -69,24 +85,12 @@ public static class HighScoreStore
     /// </summary>
     public static void Clear()
     {
-        PlayerPrefs.DeleteKey(PrefsKey);
-        PlayerPrefs.Save();
-    }
-
-    private static HighScoreList LoadList()
-    {
-        string json = PlayerPrefs.GetString(PrefsKey, "");
-        if (string.IsNullOrEmpty(json))
+        for (int i = 0; i < MaxEntries; i++)
         {
-            return new HighScoreList();
+            PlayerPrefs.DeleteKey(NameKey + i);
+            PlayerPrefs.DeleteKey(ScoreKey + i);
         }
 
-        return JsonUtility.FromJson<HighScoreList>(json);
-    }
-
-    private static int CompareByScoreDescending(HighScoreEntry first, HighScoreEntry second)
-    {
-        // second avant first : du plus grand au plus petit
-        return second.Score.CompareTo(first.Score);
+        PlayerPrefs.Save();
     }
 }

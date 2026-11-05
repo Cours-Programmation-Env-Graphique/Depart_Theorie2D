@@ -27,7 +27,7 @@ public class HighScoreTableUI : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        IReadOnlyList<HighScoreEntry> entries = HighScoreStore.Load();
+        List<HighScoreEntry> entries = HighScoreStore.Load();
         for (int i = 0; i < entries.Count; i++)
         {
             HighScoreRowUI row = Instantiate(_rowPrefab, _rowContainer);
