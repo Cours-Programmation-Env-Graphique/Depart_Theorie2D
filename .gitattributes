@@ -1,5 +1,2 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-# Scripts fournis aux élèves : gardés tels quels, en CRLF, sur toutes les plateformes
-ScriptsFournis/*.cs -text
