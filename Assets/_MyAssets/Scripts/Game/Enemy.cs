@@ -4,8 +4,12 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Enemy : MonoBehaviour
 {
-    // Marge sous le bas de l'écran avant la destruction, en unités
+    // Marge sous le bas de l'écran avant la réapparition, en unités
     private const float OffScreenMargin = 1f;
+    // Hauteur de réapparition au-dessus de l'écran, en unités
+    private const float RespawnMarginY = 1f;
+    // Distance minimale aux bords gauche et droit, en unités
+    private const float RespawnMarginX = 0.5f;
 
     [Header("Déplacement")]
     [Tooltip("Vitesse de descente, en unités par seconde")]
@@ -21,6 +25,8 @@ public class Enemy : MonoBehaviour
 
     private Rigidbody2D _rb;
     private float _limitY;
+    private float _topY;
+    private float _halfWidth;
     private bool _isDestroyed;
 
     /// <summary>
@@ -36,15 +42,20 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         _rb.linearVelocity = Vector2.down * _speed;
-        _limitY = -(Camera.main.orthographicSize + OffScreenMargin);
+
+        Camera mainCamera = Camera.main;
+        _limitY = -(mainCamera.orthographicSize + OffScreenMargin);
+        _topY = mainCamera.orthographicSize + RespawnMarginY;
+        _halfWidth = mainCamera.orthographicSize * mainCamera.aspect - RespawnMarginX;
     }
 
     private void FixedUpdate()
     {
-        // Sorti par le bas de l'écran : le joueur l'a évité, sans le détruire
+        // Sorti par le bas sans être détruit : il revient en haut
         if (_rb.position.y < _limitY)
         {
-            Destroy(gameObject);
+            float x = UnityEngine.Random.Range(-_halfWidth, _halfWidth);
+            _rb.position = new Vector2(x, _topY);
         }
     }
 
