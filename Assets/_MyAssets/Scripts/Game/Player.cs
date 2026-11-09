@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Player : MonoBehaviour
 {
-    // À COMPLÉTER 9.2 : le nom du paramètre de l'Animator
+    // À COMPLÉTER 9.2 : les noms des paramètres de l'Animator et le seuil
 
     [Header("Déplacement")]
     [Tooltip("Vitesse du vaisseau, en unités par seconde")]
