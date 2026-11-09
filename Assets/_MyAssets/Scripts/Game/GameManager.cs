@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     [Header("Difficulté")]
     [Tooltip("Points à accumuler pour passer au niveau de difficulté suivant")]
-    [SerializeField] private int _pointsPerLevel = 200;
+    [SerializeField] private int _pointsPerLevel = 2000;
     [Tooltip("Hausse de la vitesse des ennemis à chaque niveau, en proportion de leur vitesse de base")]
     [SerializeField] private float _speedIncreasePerLevel = 0.1f;
 

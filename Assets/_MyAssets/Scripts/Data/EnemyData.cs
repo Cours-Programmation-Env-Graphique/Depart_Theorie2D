@@ -12,7 +12,7 @@ public class EnemyData : ScriptableObject
 
     [Header("Pointage")]
     [Tooltip("Points gagnés quand le joueur détruit cet ennemi")]
-    [SerializeField] private int _points = 10;
+    [SerializeField] private int _points = 100;
 
     [Header("Tir")]
     [Tooltip("Cet ennemi tire-t-il sur le joueur ?")]

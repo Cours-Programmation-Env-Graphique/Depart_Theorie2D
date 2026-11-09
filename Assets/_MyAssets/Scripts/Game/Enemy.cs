@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Pointage")]
     [Tooltip("Points gagnés quand le joueur détruit cet ennemi")]
-    [SerializeField] private int _points = 10;
+    [SerializeField] private int _points = 100;
 
     [Header("Effets")]
     [Tooltip("Explosion créée à la destruction de l'ennemi")]
@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        // À COMPLÉTER 6.1 : réagir au laser ou au joueur
+        // À COMPLÉTER 6.2 : réagir au laser ou au joueur
     }
 
     private void Explode()

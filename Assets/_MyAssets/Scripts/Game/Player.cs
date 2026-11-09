@@ -30,11 +30,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _shieldVisual;
     FIN DU BLOC 13-4.4 : effacez cette ligne */
 
-    [Header("Références")]
-    [Tooltip("Source des entrées du joueur")]
-    [SerializeField] private GameInput _gameInput;
-
     private Rigidbody2D _rb;
+    private GameInput _gameInput;
     // À COMPLÉTER 9.2 : l'Animator du visuel
     private SpriteRenderer _spriteRenderer;
     private Vector2 _moveInput;
@@ -62,6 +59,8 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        // Un seul GameInput dans la scène : le code le trouve lui-même
+        _gameInput = FindAnyObjectByType<GameInput>();
 
         // Le visuel est un enfant du joueur, comme au cours 5
         // À COMPLÉTER 9.2 : récupérer l'Animator du visuel
