@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D _rb;
     private float _limitY;
     private float _topY;
+    private float _screenTopY;
     private float _halfWidth;
     private bool _isDestroyed;
 
@@ -46,6 +47,7 @@ public class Enemy : MonoBehaviour
         Camera mainCamera = Camera.main;
         _limitY = -(mainCamera.orthographicSize + OffScreenMargin);
         _topY = mainCamera.orthographicSize + RespawnMarginY;
+        _screenTopY = mainCamera.orthographicSize;
         _halfWidth = mainCamera.orthographicSize * mainCamera.aspect - RespawnMarginX;
     }
 
@@ -54,9 +56,17 @@ public class Enemy : MonoBehaviour
         // Sorti par le bas sans être détruit : il revient en haut
         if (_rb.position.y < _limitY)
         {
-            float x = UnityEngine.Random.Range(-_halfWidth, _halfWidth);
-            _rb.position = new Vector2(x, _topY);
+            MoveToTop();
         }
+    }
+
+    /// <summary>
+    /// Replace l'ennemi au-dessus de l'écran, à une position X au hasard.
+    /// </summary>
+    private void MoveToTop()
+    {
+        float x = UnityEngine.Random.Range(-_halfWidth, _halfWidth);
+        _rb.position = new Vector2(x, _topY);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -67,7 +77,7 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        // À COMPLÉTER 6.2 : réagir au laser ou au joueur
+        // À COMPLÉTER 6.2 : réagir au laser, au joueur ou à un autre ennemi
     }
 
     private void Explode()

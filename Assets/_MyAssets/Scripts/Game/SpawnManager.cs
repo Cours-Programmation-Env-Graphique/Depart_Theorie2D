@@ -14,9 +14,11 @@ public class SpawnManager : MonoBehaviour
     [Tooltip("Parent des ennemis créés, pour garder la Hierarchy lisible")]
     [SerializeField] private Transform _enemyContainer;
     [Tooltip("Délai avant le premier ennemi, en secondes")]
-    [SerializeField] private float _firstEnemyDelay = 2f;
-    [Tooltip("Délai entre deux ennemis, en secondes")]
-    [SerializeField] private float _enemyDelay = 2f;
+    [SerializeField] private float _firstEnemyDelay = 3f;
+    [Tooltip("Délai minimal entre deux ennemis, en secondes")]
+    [SerializeField] private float _minEnemyDelay = 4f;
+    [Tooltip("Délai maximal entre deux ennemis, en secondes")]
+    [SerializeField] private float _maxEnemyDelay = 7f;
 
     /* BLOC 13-4.3 À ACTIVER : effacez cette ligne et la ligne de fin du bloc
     [Header("Power-ups")]
