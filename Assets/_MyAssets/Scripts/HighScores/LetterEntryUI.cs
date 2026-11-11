@@ -62,13 +62,14 @@ public class LetterEntryUI : MonoBehaviour
     /// </summary>
     public void Submit()
     {
-        // Une saisie vide n'est pas acceptée
-        if (_input.Length == 0)
+        // Une saisie vide, ou faite seulement d'espaces, n'est pas acceptée
+        string trimmed = _input.Trim();
+        if (trimmed.Length == 0)
         {
             return;
         }
 
-        _submitted.Invoke(_input);
+        _submitted.Invoke(trimmed);
     }
 
     private void RefreshDisplay()

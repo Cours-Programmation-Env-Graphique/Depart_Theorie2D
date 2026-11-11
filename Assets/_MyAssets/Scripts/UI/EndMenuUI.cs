@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -23,6 +24,10 @@ public class EndMenuUI : MonoBehaviour
     [Tooltip("Tableau des meilleurs pointages")]
     [SerializeField] private HighScoreTableUI _highScoreTable;
 
+    [Header("Saisie du nom")]
+    [Tooltip("Délai, en secondes, avant que la saisie du nom se ferme d'elle-même")]
+    [SerializeField] private float _nameEntryTimeout = 60f;
+
     [Header("Navigation")]
     [Tooltip("Bouton sélectionné à l'affichage des résultats")]
     [SerializeField] private GameObject _resultsFirstSelected;
@@ -43,6 +48,7 @@ public class EndMenuUI : MonoBehaviour
         if (score > 0 && HighScoreStore.Qualifies(score))
         {
             ShowPanel(_nameEntryPanel, _nameEntryFirstSelected);
+            StartCoroutine(NameEntryTimeoutRoutine());
         }
         else
         {
@@ -117,6 +123,17 @@ public class EndMenuUI : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    private IEnumerator NameEntryTimeoutRoutine()
+    {
+        yield return new WaitForSeconds(_nameEntryTimeout);
+
+        // Sur une borne, un joueur peut partir sans écrire son nom : la borne revient aux résultats
+        if (_nameEntryPanel.activeSelf)
+        {
+            ShowResults();
+        }
     }
 
     private void ShowPanel(GameObject panel, GameObject firstSelected)

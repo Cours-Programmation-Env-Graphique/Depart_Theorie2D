@@ -6,7 +6,7 @@
 public class Explosion : MonoBehaviour
 {
     [Tooltip("Durée de vie, en secondes : au moins celle de l'animation et du son")]
-    [SerializeField] private float _lifetime = 1.5f;
+    [SerializeField] private float _lifetime = 2.5f;
     [Tooltip("Vitesse de dérive vers le bas : les débris continuent leur course")]
     [SerializeField] private float _driftSpeed = 1.5f;
 
