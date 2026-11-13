@@ -25,8 +25,6 @@ public class EnemyData : ScriptableObject
     [SerializeField] private float _minFireDelay = 2f;
     [Tooltip("Délai maximal entre deux tirs, en secondes")]
     [SerializeField] private float _maxFireDelay = 4f;
-    [Tooltip("Distance à laquelle l'ennemi voit le joueur, en unités")]
-    [SerializeField] private float _sightDistance = 12f;
 
     public float Speed => _speed;
     public int Points => _points;
@@ -35,5 +33,4 @@ public class EnemyData : ScriptableObject
     public Laser LaserPrefab => _laserPrefab;
     public float MinFireDelay => _minFireDelay;
     public float MaxFireDelay => _maxFireDelay;
-    public float SightDistance => _sightDistance;
 }
