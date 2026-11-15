@@ -25,9 +25,9 @@ public class SpawnManager : MonoBehaviour
     [Tooltip("Power-ups, choisis au hasard")]
     [SerializeField] private PowerUp[] _powerUpPrefabs;
     [Tooltip("Délai minimal entre deux power-ups, en secondes")]
-    [SerializeField] private float _minPowerUpDelay = 8f;
+    [SerializeField] private float _minPowerUpDelay = 20f;
     [Tooltip("Délai maximal entre deux power-ups, en secondes")]
-    [SerializeField] private float _maxPowerUpDelay = 15f;
+    [SerializeField] private float _maxPowerUpDelay = 35f;
     FIN DU BLOC 13-4.3 : effacez cette ligne */
 
     private float _halfWidth;
